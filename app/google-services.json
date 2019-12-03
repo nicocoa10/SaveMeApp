@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "947358041978",
+    "firebase_url": "https://primeval-sweep-253918.firebaseio.com",
+    "project_id": "primeval-sweep-253918",
+    "storage_bucket": "primeval-sweep-253918.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947358041978:android:2078295d5b696391ba38c3",
+        "android_client_info": {
+          "package_name": "com.example.savemeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947358041978-s47mmkmf5manfh4d18uvv7ua619o0k90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW7X2lWaQJ5wDBJIhpl6UFTMk-N5uSUTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "947358041978-s47mmkmf5manfh4d18uvv7ua619o0k90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
