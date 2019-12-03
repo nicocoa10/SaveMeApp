@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
 import com.example.savemeapp.databinding.ActivityMainBinding
 
 
@@ -18,6 +19,10 @@ class MainActivity : AppCompatActivity() {
             this,
             R.layout.activity_main
         )
+
+        val navController = this.findNavController(R.id.myNavHostFragment)
+
+        NavigationUI.setupActionBarWithNavController(this,navController)
 
     }
 

@@ -8,11 +8,12 @@ import android.database.sqlite.SQLiteOpenHelper
 class DatabaseHandler( var context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
 
     override fun onCreate(db: SQLiteDatabase) {
-        val table = "CREATE TABLE $TABLE_NAME (" +
-                "$COL_ID INTEGER PRIMARY KEY," +
+        val table = "CREATE TABLE IF NOT EXISTS $TABLE_NAME (" +
+                "$COL_ID INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "$COL_NAME TEXT," +
                 "$COL_PHONE VARCHAR(15))"
         db.execSQL(table)
+
     }
 
     override fun onUpgrade(db: SQLiteDatabase, p1: Int, p2: Int) {
@@ -24,15 +25,6 @@ class DatabaseHandler( var context: Context) : SQLiteOpenHelper(context, DATABAS
     override fun onDowngrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
         onUpgrade(db, oldVersion, newVersion)
     }
-
-//    fun insertData(user: User){
-//        val db = this.writableDatabase
-//        val cv = ContentValues()
-//        cv.put(COL_NAME,user.name)
-//        cv.put(COL_PHONE,user.name)
-//        var result = db.insert(TABLE_NAME,null,cv)
-//
-//    }
 
     companion object {
 

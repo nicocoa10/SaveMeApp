@@ -2,7 +2,7 @@ package com.example.savemeapp.DataModel
 
 class User {
 
-    var id: Int = 0
+    var id: Int? = 0
     var name: String = ""
     var phone: String = ""
 
@@ -12,6 +12,6 @@ class User {
     }
 
     fun formatStr(): String{
-        return "$id $name $phone"
+        return "ID: $id\nName: $name\nPhone: $phone"
     }
 }

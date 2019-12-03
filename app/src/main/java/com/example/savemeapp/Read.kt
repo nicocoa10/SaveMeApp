@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.example.savemeapp.databinding.FragmentReadBinding
 
 /**
@@ -31,6 +32,9 @@ class Read : Fragment() {
         val myHelper = DatabaseHandler(view.context)
 
         val db = myHelper.readableDatabase
+
+        binding.goUpdate.setOnClickListener { view.findNavController().navigate(R.id.action_read_to_update) }
+        binding.goQr.setOnClickListener { view.findNavController().navigate(R.id.action_read_to_qrcode) }
     }
 
 }

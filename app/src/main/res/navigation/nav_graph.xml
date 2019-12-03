@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/update"
         android:name="com.example.savemeapp.Update"
-        android:label="fragment_update"
-        tools:layout="@layout/fragment_update" >
+        android:label="Update"
+        tools:layout="@layout/fragment_update">
         <action
             android:id="@+id/action_update_to_read"
             app:destination="@id/read" />
@@ -17,8 +17,8 @@
     <fragment
         android:id="@+id/read"
         android:name="com.example.savemeapp.Read"
-        android:label="fragment_read"
-        tools:layout="@layout/fragment_read" >
+        android:label="Display"
+        tools:layout="@layout/fragment_read">
         <action
             android:id="@+id/action_read_to_qrcode"
             app:destination="@id/qrcode" />
@@ -29,8 +29,8 @@
     <fragment
         android:id="@+id/qrcode"
         android:name="com.example.savemeapp.Qrcode"
-        android:label="fragment_qrcode"
-        tools:layout="@layout/fragment_qrcode" >
+        android:label="QR Code"
+        tools:layout="@layout/fragment_qrcode">
         <action
             android:id="@+id/action_qrcode_to_read"
             app:destination="@id/read" />

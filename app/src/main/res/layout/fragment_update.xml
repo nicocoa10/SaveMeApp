@@ -16,7 +16,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
 
@@ -24,7 +24,7 @@
                 android:id="@+id/Name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="15dp"
                 android:padding="10dp"
                 android:inputType="text"
                 android:hint="@string/nameField"/>
@@ -32,56 +32,103 @@
                 android:id="@+id/Phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="15dp"
                 android:padding="10dp"
                 android:inputType="phone"
                 android:imeOptions="actionDone"
                 android:hint="@string/phoneField"/>
 
             <TextView
-                android:id="@+id/reading"
+                android:id="@+id/notifySuccess"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="15dp"
                 android:padding="10dp"
                 android:textSize="30sp"/>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_marginTop="200dp">
+                android:layout_marginTop="80dp"
+                android:layout_marginStart="5dp">
 
-                <Button
-                    android:id="@+id/delete"
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/reading"
+                        android:layout_width="250dp"
+                        android:layout_height="150dp"
+                        android:padding="10dp"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/getRow"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Search by ID"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:padding="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:padding="10dp"
-                    android:text="@string/deleteButton"/>
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginStart="30dp">
+                    <Button
+                        android:id="@+id/delete"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="@string/deleteButton"/>
 
-                <Button
-                    android:id="@+id/insert"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:padding="10dp"
-                    android:text="@string/insertButton" />
-
-
-                <Button
-                    android:id="@+id/read"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:padding="10dp"
-                    android:text="@string/readButton" />
-
-
+                    <Button
+                        android:id="@+id/insert"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="@string/insertButton" />
+                    <Button
+                        android:id="@+id/read"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="@string/readButton" />
+                </LinearLayout>
 
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="263dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="5dp">
 
+                <ImageButton
+                    android:id="@+id/previousRow"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:src="@android:drawable/ic_media_rew"
+                    android:textAlignment="center" />
+
+                <ImageButton
+                    android:id="@+id/nextRow"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:src="@android:drawable/ic_media_ff"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
         </LinearLayout>
 
     </FrameLayout>
