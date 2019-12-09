@@ -1,4 +1,4 @@
 # SaveMeApp
 SaveMe Android Application repository.
 
-The SaveMeApp is an application that aims to emulate a rolodex, a address book, or contact list in a singluar application. While a regular cell phone already has a built in contacts application the SaveMeApp would come with additional features like a QR code generator and scanner. These features are meant to be used durinng places where your mobile networks are nonexistent or spotty at best that prevent one from accessing their social media to add people.
+The SaveMeApp is an application that aims to be an alternative to the contacts application that is on all modern phones. The SaveMeApp differs from the regular contacts application by including a QR code generator and QR code scanner. The inclusion of these features was decided up when one of our members of our development team was complaining about the how hard it was to keep in contact with newly made friends at concerts. This is due to the fact concerts are usually have bad reception and 
