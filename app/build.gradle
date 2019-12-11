@@ -42,7 +42,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-
+    implementation 'com.journeyapps:zxing-android-embedded:4.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
 
 //    // Room and Lifecycle dependencies
 //    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
@@ -58,4 +59,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.1.0'
     implementation 'androidx.navigation:navigation-ui-ktx:2.1.0'
+    implementation files('libs/zxing-2.1.jar')
 }

@@ -34,14 +34,14 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:padding="10dp"
-                android:inputType="phone"
+                android:inputType="text"
                 android:imeOptions="actionDone"
                 android:hint="@string/phoneField"/>
 
             <TextView
                 android:id="@+id/notifySuccess"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="1dp"
                 android:layout_margin="15dp"
                 android:padding="10dp"
                 android:textSize="30sp"/>
@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="0dp"
                 android:layout_marginStart="5dp">
 
 
