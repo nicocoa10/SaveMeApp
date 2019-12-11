@@ -24,14 +24,31 @@ class Read : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_read,container,false)
 
+
+
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val myHelper = DatabaseHandler(view.context)
-
         val db = myHelper.readableDatabase
+
+        if(arguments?.getString("data")!=null){
+
+            val str = arguments?.getString("data")
+
+            binding.nameDisplay.setText(str)
+
+
+//            val QrCodeFragment = Qrcode()
+//            val args = Bundle()
+//            args.putString("data", str)
+
+//            QrCodeFragment.arguments = args
+
+
+       }
 
         binding.goUpdate.setOnClickListener { view.findNavController().navigate(R.id.action_read_to_update) }
         binding.goQr.setOnClickListener { view.findNavController().navigate(R.id.action_read_to_qrcode) }

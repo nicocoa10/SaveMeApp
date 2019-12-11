@@ -66,6 +66,18 @@ class Qrcode : Fragment() {
         val dbread = myhelper.readableDatabase
         QRCodeImage = view.findViewById(R.id.qrcode)
 
+        //gets string readed from database
+        if(arguments?.getString("data")!=null) {
+
+            val str = arguments?.getString("data")
+            encodedString= str.toString()
+        }
+
+
+            // this get the database for us to read from
+
+
+
         //generateQRCODE
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (true) { //as of right now we assume that permission is true , we dont ask.
