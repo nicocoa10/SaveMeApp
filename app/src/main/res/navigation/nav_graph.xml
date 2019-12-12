@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/read">
+
+    <fragment
+        android:id="@+id/update"
+        android:name="com.example.savemeapp.Update"
+        android:label="Update"
+        tools:layout="@layout/fragment_update">
+        <action
+            android:id="@+id/action_update_to_read"
+            app:destination="@id/read" />
+    </fragment>
+    <fragment
+        android:id="@+id/read"
+        android:name="com.example.savemeapp.Read"
+        android:label="Display"
+        tools:layout="@layout/fragment_read">
+        <action
+            android:id="@+id/action_read_to_qrcode"
+            app:destination="@id/qrcode" />
+        <action
+            android:id="@+id/action_read_to_update"
+            app:destination="@id/update" />
+    </fragment>
+    <fragment
+        android:id="@+id/qrcode"
+        android:name="com.example.savemeapp.Qrcode"
+        android:label="QR Code"
+        tools:layout="@layout/fragment_qrcode">
+        <action
+            android:id="@+id/action_qrcode_to_read"
+            app:destination="@id/read" />
+    </fragment>
+
+</navigation>
