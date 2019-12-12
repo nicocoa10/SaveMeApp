@@ -14,3 +14,11 @@ For storing our contact information we were originally going to work with Fireba
 
 For the QR code generator and QR code scanner we have decided to use ZXing, an open source multi-format 1D/2D barcode image processing library implemented in Java. Using ZXing, short for Zebra Crossing, we were able to code the fragments that handle the QR code generation and the QR code scanning.
 
+Project Resources
+-
+https://github.com/zxing/zxing/wiki/Getting-Started-Developing
+
+https://www.youtube.com/watch?v=NqFVqLqbw_g
+
+https://www.youtube.com/watch?v=fxl_Cr8gHl4
+
