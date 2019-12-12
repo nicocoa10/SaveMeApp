@@ -12,5 +12,5 @@ The main features of SaveMe are,
     
 For storing our contact information we were originally going to work with Firebase but we have opted out on that endevor due to the hurdle of integrating Firebase into SaveMe, instead we decided to use SQLite. In SaveMe we plan to have 3 tables; the first table deals with the User's own information stored on the application, the second table deals with all the information the user collects from other users, and the third table is used to store all previous information collected.  
 
-It is to that end the development team has decided to use ZXing, an open source multi-format 1D/2D barcode image processing library implemented in Java. Using ZXing, short for Zebra Crossing, we were able to code the fragments that handle the QR code generation and the QR code scanning.
+For the QR code generator and QR code scanner we have decided to use ZXing, an open source multi-format 1D/2D barcode image processing library implemented in Java. Using ZXing, short for Zebra Crossing, we were able to code the fragments that handle the QR code generation and the QR code scanning.
 
