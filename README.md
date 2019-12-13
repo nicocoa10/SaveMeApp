@@ -23,9 +23,11 @@ For the QR code generator and QR code scanner we have decided to use ZXing, an o
 
 ## Project Resources
 
-https://github.com/zxing/zxing/wiki/Getting-Started-Developing
+- https://github.com/zxing/zxing/wiki/Getting-Started-Developing
 
-https://www.youtube.com/watch?v=NqFVqLqbw_g
+- https://www.youtube.com/watch?v=NqFVqLqbw_g
 
-https://www.youtube.com/watch?v=fxl_Cr8gHl4
+- https://www.youtube.com/watch?v=fxl_Cr8gHl4
 
+## Demo
+<img src="https://i.imgur.com/I46IsFb.gif" width=200><br>
