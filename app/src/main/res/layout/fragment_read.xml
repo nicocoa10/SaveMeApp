@@ -10,7 +10,8 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Read">
+        tools:context=".Read"
+        android:background="@drawable/blue_background">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,7 +24,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
-                android:text="Test1"
+                android:text="DATA"
+                android:textColor="@color/white"
                 android:textSize="30sp" />
 
             <TextView
@@ -32,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
-                android:text="Test2"
+                android:text=""
                 android:textSize="30sp" />
 
             <LinearLayout
@@ -46,13 +48,15 @@
                     android:id="@+id/goUpdate"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/updateTable"/>
+                    android:text="@string/updateTable"
+                    android:background="@color/blue"/>
 
                 <Button
                     android:id="@+id/goQr"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/generateQr"/>
+                    android:text="@string/generateQr"
+                    android:background="@color/white"/>
 
             </LinearLayout>
 

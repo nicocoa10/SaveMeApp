@@ -85,13 +85,14 @@ class Update : Fragment() {
             }
 
             curs.close()
-            Toast.makeText(getContext(), stringToEncode, Toast.LENGTH_LONG).show() // for testing purposes
+//            Toast.makeText(getContext(), stringToEncode, Toast.LENGTH_LONG).show() // for testing purposes
 
             val readFragment = Read()
             val args = Bundle()
             args.putString("data", stringToEncode)
 
             readFragment.arguments = args
+
 
             view.findNavController().navigate(R.id.action_update_to_read)
         }

@@ -34,31 +34,32 @@
                 app:layout_constraintVertical_bias="0.13999999" />
 
             <Button
-                android:id="@+id/signupButton"
+                android:id="@+id/saveButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="280dp"
                 android:height="45dp"
-                android:background="@drawable/signup_button"
-                android:text=""
+                android:background="@color/blue"
+                android:text="SAVE INFO"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.79" />
 
             <Button
-                android:id="@+id/loginButton"
+                android:id="@+id/homeButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="280dp"
                 android:height="45dp"
-                android:background="@drawable/login_button"
-                android:text=""
+                android:background="@color/greenish"
+                android:text="HOME"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/signupButton" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.94" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
