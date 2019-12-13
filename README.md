@@ -10,7 +10,7 @@ The inclusion of these features was decided up when one of our members of our de
 - [x] Store any contact information that the user sets up
 - [ ] The ability to obtain information from another user
 - [x] The use of a QR code generator to create a code that another user can scan to get the users information
-- [] The use of a QR code scanner that allows the app to obtain information from other users QR codes
+- [ ] The use of a QR code scanner that allows the app to obtain information from other users QR codes
 
 ## Issues
 For storing our contact information we were originally going to work with Firebase but we have opted out on that endevor due to the hurdle of integrating Firebase into SaveMe, instead we decided to use SQLite. In SaveMe we plan to have 3 tables; the first table deals with the User's own information stored on the application, the second table deals with all the information the user collects from other users, and the third table is used to store all previous information collected.  
