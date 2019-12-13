@@ -8,10 +8,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.example.savemeapp.DataModel.User
 import com.example.savemeapp.DataModel.UserContract
 import com.example.savemeapp.databinding.FragmentUpdateBinding
+
+
 
 /**
  * A simple [Fragment] subclass.
@@ -22,6 +26,7 @@ class Update : Fragment() {
     val userEn = UserContract.UserEntry
     var maxId: Int = 0
     var currentId : Int = 1
+    var stringToEncode: String= android.os.Build.MODEL
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -66,6 +71,32 @@ class Update : Fragment() {
 
         }
 
+        //when done button is pressed then we go to read page.
+        //string is generated here
+        binding.done.setOnClickListener {
+
+            val curs = dbread.rawQuery(
+                "Select * from ${userEn.TABLE_NAME} " , null
+            )
+            if(curs.moveToFirst()){
+                do{
+                    stringToEncode = " $stringToEncode-" + "${curs.getString(0)}-" + "${curs.getString(1)}-" +" ${curs.getString(2)}-"
+                }while(curs.moveToNext())
+            }
+
+            curs.close()
+//            Toast.makeText(getContext(), stringToEncode, Toast.LENGTH_LONG).show() // for testing purposes
+
+            val readFragment = Read()
+            val args = Bundle()
+            args.putString("data", stringToEncode)
+
+            readFragment.arguments = args
+
+
+            view.findNavController().navigate(R.id.action_update_to_read)
+        }
+
         binding.read.setOnClickListener {
 
             // this get the database for us to read from
@@ -79,7 +110,7 @@ class Update : Fragment() {
             }else{
                 currentId = rowId.toInt()
                 val curs = dbread.rawQuery(
-                    "Select * from ${userEn.TABLE_NAME} where id = $rowId", null
+                    "Select * from ${userEn.TABLE_NAME} " , null
                 )
                 var str = ""
                 if(curs.moveToFirst()){
@@ -89,7 +120,9 @@ class Update : Fragment() {
                 }
 
                 curs.close()
+
                 binding.reading.text = str
+
             }
         }
 

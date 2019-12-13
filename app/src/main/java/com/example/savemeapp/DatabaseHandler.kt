@@ -12,6 +12,7 @@ class DatabaseHandler( var context: Context) : SQLiteOpenHelper(context, DATABAS
                 "$COL_ID INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "$COL_NAME TEXT," +
                 "$COL_PHONE VARCHAR(15))"
+        val Input_table =
         db.execSQL(table)
 
     }
