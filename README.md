@@ -30,5 +30,5 @@ For the QR code generator and QR code scanner we have decided to use ZXing, an o
 - https://www.youtube.com/watch?v=fxl_Cr8gHl4
 
 ## Demo
-<img src="https://i.imgur.com/8q3peFH.gif" width=200><br>
-<img src="https://i.imgur.com/ZS4Pmpb.gif" width=200><br>
+![](android-demo-2.gif)
+![](android-demo-3.gif)
