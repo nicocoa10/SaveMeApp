@@ -21,6 +21,9 @@ The reason we decided on QR codes for passing along information instead of NFC o
 ## Libraries
 For the QR code generator and QR code scanner we have decided to use ZXing, an open source multi-format 1D/2D barcode image processing library implemented in Java. Using ZXing, short for Zebra Crossing, we were able to code the fragments that handle the QR code generation and the QR code scanning. 
 
+## Design
+Some of the design was implemented with design toolkit software "Sketch" for Mac. Sketch is a design software for layouts , views and any graphic components of an application.
+
 ## Project Resources
 
 - https://github.com/zxing/zxing/wiki/Getting-Started-Developing
