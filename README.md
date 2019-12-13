@@ -7,10 +7,10 @@ SaveMe is an application that aims to be an alternative to the contacts applicat
 The inclusion of these features was decided up when one of our members of our development team was complaining about how he kept losing friends he had made when he went to concerts. This was due to concerts usually being held in an area with poor moblie service. We wanted a way for them to exchange information without dealing with typing it on each others phones, being unable to hear each others information due the background noise of the concert, and avoid dealing with poor internet service.
 
 ## Features     
-- [ ] Store any contact information that the user sets up
+- [x] Store any contact information that the user sets up
 - [ ] The ability to obtain information from another user
-- [ ] The use of a QR code generator to create a code that another user can scan to get the users information
-- [ ] The use of a QR code scanner that allows the app to obtain information from other users QR codes
+- [x] The use of a QR code generator to create a code that another user can scan to get the users information
+- [] The use of a QR code scanner that allows the app to obtain information from other users QR codes
 
 ## Issues
 For storing our contact information we were originally going to work with Firebase but we have opted out on that endevor due to the hurdle of integrating Firebase into SaveMe, instead we decided to use SQLite. In SaveMe we plan to have 3 tables; the first table deals with the User's own information stored on the application, the second table deals with all the information the user collects from other users, and the third table is used to store all previous information collected.  
@@ -30,4 +30,5 @@ For the QR code generator and QR code scanner we have decided to use ZXing, an o
 - https://www.youtube.com/watch?v=fxl_Cr8gHl4
 
 ## Demo
-<img src="https://i.imgur.com/I46IsFb.gif" width=200><br>
+<img src="https://i.imgur.com/sKK3i6k.gif" width=200><br>
+<img src="https://i.imgur.com/gMvfZ8f.gif" width=200><br>
