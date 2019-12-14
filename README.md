@@ -1,8 +1,8 @@
 # SaveMe
-Daniel Victoria
-Nicolas Ojeda
-Danny Tran
-Sebastian Sunjoto
+Daniel Victoria<br />
+Nicolas Ojeda<br />
+Danny Tran<br />
+Sebastian Sunjoto<br />
 
 ## Description
 SaveMe is an application that aims to be an alternative to the contacts application that is on all modern phones. SaveMe differs from the regular contacts application by including a QR code generator and QR code scanner. 
